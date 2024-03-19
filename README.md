@@ -1,7 +1,16 @@
 # Exploring Hardware Accelerators for Kalman Filter
 Kalman Filter is an algorithm that produces estimates of state variables of a discrete data controlled system (thus an estimate of the state of the system) based on measurements which can typically be noisy.
 
-## A study of Hardware Acceleration of Kalman Filter
+We have performed a basic profiling and analysis of a baseline C implementation, and explored multiple approaches to increase throughput and reduce latency at reduced resource utilizations.
+Following approaches are compared:
+- Baseline C
+- CPU Multithreading using OpenMP
+- Custom Hardware Accelerator design using Bluespec SystemVerilog
+- Custom Hardware Accelerator design using Vitis HLS
+
+Refer to the [video](https://youtu.be/uaDeUbCFaJg?feature=shared) and [report](https://github.com/GentlemanAMS/Kalman-Filter-Accelerator/blob/master/report.pdf) for further details.
+
+## Commands
 
 To run baseC implementation
 ```gcc basecode_time.c```
